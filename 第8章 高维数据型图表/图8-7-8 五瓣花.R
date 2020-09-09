@@ -1,7 +1,7 @@
 library(ggplot2)
 library(wesanderson)
 
-Flower <- read.csv("��껨_��Ԫ.csv") 
+Flower <- read.csv("Îå°ê»¨_µ¥Ôª.csv") 
 N_Flower<-nrow(Flower)
 crime <- read.csv("crimeRatesByState2005.tsv",
                   header = TRUE, sep = "\t", stringsAsFactors = F)
