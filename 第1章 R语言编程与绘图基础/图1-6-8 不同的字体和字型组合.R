@@ -1,3 +1,6 @@
+#EasyShu团队出品，更多精彩内容请关注微信公众号【EasyShu】
+#如有问题修正与深入学习，可联系微信：EasyCharts
+
 library(ggplot2)
 library(Cairo)
 library(showtext)
@@ -10,7 +13,7 @@ df$family<-rep(c("sans", "times",  "mono"),each=4)
 df$label<-paste(df$family,"\n ",df$fontface)
 
 
-#CairoPDF(file="����ͼ.pdf",width=4.67,height=4.36)
+#CairoPDF(file="×ÖÌåÍ¼.pdf",width=4.67,height=4.36)
 #showtext.begin()
 
 ggplot(df, aes(x, y)) +
