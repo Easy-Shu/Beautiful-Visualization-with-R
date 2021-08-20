@@ -1,15 +1,15 @@
 
-#EasyChartsÍÅ¶Ó³öÆ·£¬ÈçÓĞÉÌÓÃ±Ø¾¿£¬
-#ÈçĞèÊ¹ÓÃÓëÉîÈëÑ§Ï°£¬ÇëÁªÏµÎ¢ĞÅ£ºEasyCharts
+#EasyShuå›¢é˜Ÿå‡ºå“ï¼Œæ›´å¤šç²¾å½©å†…å®¹è¯·å…³æ³¨å¾®ä¿¡å…¬ä¼—å·ã€EasyShuã€‘
+#å¦‚æœ‰é—®é¢˜ä¿®æ­£ä¸æ·±å…¥å­¦ä¹ ï¼Œå¯è”ç³»å¾®ä¿¡ï¼šEasyCharts
 
 
 library(ggplot2)
 library(RColorBrewer)
 library(scales)
 
-x <- rnorm(250 , mean=10 , sd=1) #(a2) ·ş´ÓÕıÌ¬·Ö²¼µÄÔ­Ê¼Êı¾İ
+x <- rnorm(250 , mean=10 , sd=1) #(a2) æœä»æ­£æ€åˆ†å¸ƒçš„åŸå§‹æ•°æ®
 
-#x <-sample(1:20, 250, replace = TRUE) #(a1) ·ş´Ó¾ùÔÈ·Ö²¼µÄÔ­Ê¼Êı¾İ
+#x <-sample(1:20, 250, replace = TRUE) #(a1) æœä»å‡åŒ€åˆ†å¸ƒçš„åŸå§‹æ•°æ®
 
 step<-0.2
 breaks<- seq(min(x)-step,max(x)+step,step)#"sturges"
@@ -29,7 +29,7 @@ dat <- dat[yvals > 0, ]          # Knock out any zero y-values
 
 colormap <- colorRampPalette(rev(brewer.pal(11,'Spectral')))(32)
 
-#------------------------------------¿é×´tile---------------------------------------
+#------------------------------------å—çŠ¶tile---------------------------------------
 ggplot(dat, aes(x=xvals,y=yvals,fill=yvals))+
   geom_tile(colour="black")+
   scale_fill_gradientn(colours=colormap)+
@@ -41,7 +41,7 @@ ggplot(dat, aes(x=xvals,y=yvals,fill=yvals))+
     legend.position=c(0.9,0.75)
   )
 
-#-----------------------------------Ô²È¦point-----------------------------------------
+#-----------------------------------åœ†åœˆpoint-----------------------------------------
 ggplot(dat, aes(x=xvals,y=yvals,fill=yvals))+
   geom_point(colour="black",shape=21,size=4)+
   scale_fill_gradientn(colours=colormap)+
