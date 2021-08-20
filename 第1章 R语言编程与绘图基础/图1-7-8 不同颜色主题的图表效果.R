@@ -1,5 +1,5 @@
 
-#EasyCharts团队出品，
+#EasyShu团队出品，更多精彩内容请关注微信公众号【EasyShu】
 #如有问题修正与深入学习，可联系微信：EasyCharts
 
 library(ggplot2)
