@@ -26,7 +26,7 @@
 如果这本书对你的科研图表绘制有用，也可引用该书：
 ```
 @book{zhang2019R,
-  title={Beautiful Data Visualization with R-How to Make Professional Charts},
+  title={Beautiful Data Visualization with {R}-How to Make Professional Charts},
   author={Jie Zhang},
   year={2019},
   publisher={Publishing House of Electronic Industry}
